@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Задание 2</title>
+
+</head>
+
+<body>
+
+    <button class="modal-link registration-button" data-modal="registration">Зарегистрироваться</button>
+
+    <div class="modal-overlay" data-modal="registration">
+
+        <div class="modal-table">
+
+            <div class="modal-table-cell">
+
+                <div class="modal">
+
+                    <div class="modal__header">Регистрация</div>
+
+                    <div class="modal-content">
+
+                        <div class="modal-inputs-top">
+
+                            <div class="modal-inputs">
+
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper__label"><span>*</span>Название организации</div>
+                                    <input class="field" type="text" name="organization">
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper__label"><span>*</span>Телефон</div>
+                                    <input class="field" type="tel" name="phone">
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper__label"><span>*</span>E-mail</div>
+                                    <input class="field" type="email" name="email">
+                                </div>
+
+                            </div>
+
+                            <div class="modal-file">
+
+                                <button class="modal-file__close"></button>
+
+                                <div class="modal-file__image"></div>
+
+                                <div class="modal-file-inner">
+
+                                    <div class="modal-file-inner__icon"></div>
+                                    <input class="modal-file-inner__avatar" type="file" name="avatar">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-inputs-bottom">
+
+                            <div class="input-wrapper">
+                                <div class="input-wrapper__label"><span>*</span>Деятельность</div>
+                                <select class="field" name="activity">
+                                    <option value="Экология">Экология</option>
+                                    <option value="Строительство">Строительство</option>
+                                    <option value="Медицина">Медицина</option>
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <div class="input-wrapper--icon"></div>
+                                <input class="field" type="text" name="website">
+                            </div>
+
+                        </div>
+
+                        <button class="modal__registration">Зарегистрироваться</button>
+
+                        <button class="modal__close">Отменить</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/mask.js"></script>
+    <script src="./scripts/scripts.js"></script>
+
+</body>
+
+</html>
